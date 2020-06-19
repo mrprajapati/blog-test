@@ -1,0 +1,10 @@
+<h1>Mahesh Blog</h1>
+
+<hr>
+{% for post in posts %}
+<div>
+    <p>Published: {{ post.publish_at }}</p>
+    <h2><a href="">{{ post.title }}</a></h2>
+    <p>{{ post.text }}</p>
+</div>
+{% endfor %}
